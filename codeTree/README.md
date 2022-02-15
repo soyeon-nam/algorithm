@@ -33,13 +33,21 @@
   
   
   
+<<<<<<< HEAD
+=======
+  <span style='background-color: #fff5b1'>노란형광펜</span>
+>>>>>>> 605b7086574b467791d726e3198e5b0ce9fe4583
 ## 2. Simulation
 
 격자 안에서 완전 탐색, 회전 그리고 이동하는 법
 
 | Unit | Description |
 |--------------- | ---------------------------------- |
+<<<<<<< HEAD
 |<span style='background-color: #fff5b1'>[최고의 33위치](./simulation/최고의_33위치.py)</span>|격자 안에서의 완전탐색|
+=======
+|<span style='background-color: #fff5b1'>**[최고의 33위치](./simulation/최고의_33위치.py)**</span>|격자 안에서의 완전탐색|
+>>>>>>> 605b7086574b467791d726e3198e5b0ce9fe4583
 |**[행복한 수열의 개수](./simulation/행복한_수열의_개수_2.py)**||
 |**[양수 직사각형의 최대 크기](./simulation/양수_직사각형의_최대_크기.py)**||
 |**[컨베이어 벨트](./simulation/컨베이어_벨트_배열ver.py)**|격자 안에서 특정 방향으로 한 칸씩 밀고 당기기|
