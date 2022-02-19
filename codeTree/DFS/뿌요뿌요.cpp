@@ -4,10 +4,12 @@
 
 using namespace std;
 
-int n, cnt_pop_space, max_space_size;
-int curr_cnt = 1;
+int n;
 int arr[(MAX_N + 1)][(MAX_N + 1)];
 int visited[(MAX_N + 1)][(MAX_N + 1)];
+
+int cnt_pop_space, max_space_size;
+int curr_pop_space_cnt;
 
 bool 	inRange(int x, int y) {
 	return (1 <= x && x <= n && 1 <= y && y <= n);
@@ -28,7 +30,7 @@ void		dfs(int x, int y, int num) {
 		int ny = y + dy[i];
 
 		if (isValid(nx, ny) && arr[nx][ny] == num) {
-			++curr_cnt;
+			++curr_pop_space_cnt;
 			visited[nx][ny] = 1;
 			dfs(nx, ny, num);
 		}
@@ -45,11 +47,12 @@ int		main() {
 	for (int i = 1; i <= n; ++i)
 		for (int j = 1; j <= n; ++j) {
 			if (!visited[i][j]) {
+				curr_pop_space_cnt = 1;
 				visited[i][j] = 1;
 				dfs(i, j, arr[i][j]);
-				max_space_size = max(curr_cnt, max_space_size);
-				cnt_pop_space += (curr_cnt >= 4) ? 1 : 0;
-				curr_cnt = 1;
+
+				max_space_size = max(curr_pop_space_cnt, max_space_size);
+				cnt_pop_space += (curr_pop_space_cnt >= 4) ? 1 : 0;
 			}
 		}
 	cout << cnt_pop_space << " " << max_space_size;
