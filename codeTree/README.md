@@ -1,7 +1,7 @@
-
+<br/><br/>
 # 2022 여름방학 코딩테스트 대비 캠프
-
-
+  
+  
 ## Curriculum
 
 - [dxdy-Technique](#1._dxdy-Technique)
@@ -24,7 +24,7 @@
 | Unit | Description |
 |--------------- |--------------------- |
 |[방향에 맞춰 이동](./dxdy_technique/방향에_맞춰_이동.py)|dx, dy 테크닉|
-|[문자에 따른 명령](./dxdy_technique/문자에_따른_명령 2.py)|방향 회전을 위한 dx, dy 정의 방법|
+|[문자에 따른 명령](./dxdy_technique/문자에_따른_명령.py)|방향 회전을 위한 dx, dy 정의 방법|
 |[1이 3개 이상 있는 위치](./dxdy_technique/1이_3개_이상_있는_위치.py)|격자에서의 dx, dy|
 |[작은 구슬의 이동](./dxdy_technique/작은_구슬의_이동.py)|조건에 따라 방향이 변하는 경우|
 |[빙빙 돌며 숫자 사각형 채우기](./dxdy_technique/빙빙_돌며_숫자_사각형_채우기.py)|빙빙 돌며 숫자 적기|
