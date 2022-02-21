@@ -3,15 +3,12 @@
 #include <string>
 #include <map>
 
-#define MAX_INPUT	200
-
 using namespace std;
 
 string	g_input;
 int		g_size;
-int		g_max = INT_MIN;
+int		g_max = INT8_MIN;
 vector<int> mapper;
-
 
 // abcdef
 // +-*
@@ -20,22 +17,7 @@ vector<int> mapper;
 
 
 int		convertAlpha(char opr) {
-	switch (opr) {
-		case 'a':
-			return (mapper[0]);
-		case 'b':
-			return (mapper[1]);
-		case 'c':
-			return (mapper[2]);
-		case 'd':
-			return (mapper[3]);	
-		case 'e':
-			return (mapper[4]);			
-		case 'f':
-			return (mapper[5]);			
-		default :
-			return (0);
-	}
+    return (mapper[opr - 'a']);
 }
 
 int		calculate(int ret, char opr, int num) {
