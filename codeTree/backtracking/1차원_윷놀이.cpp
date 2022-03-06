@@ -41,15 +41,18 @@ void		chooseMarker(int cnt) {
 	}
 
 	for (int i = 0; i < k; i++) {
+		if(moveNum[i] >= m)
+			continue;
+		// location[i] += moveNum[cnt];
 		moveOrder.push_back(i);
 		chooseMarker(cnt + 1);
+		// location[i] -= moveNum[cnt];
 		moveOrder.pop_back();
 	}
 }
 
 int		main() {
 	cin >> n >> m >> k;
-	int input;
 	for (int i = 0; i < n; i++)
 		cin >> moveNum[i];
 	chooseMarker(0);
